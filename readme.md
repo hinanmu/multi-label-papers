@@ -11,18 +11,27 @@ on Knowledge and Data Engineering 26, 8 (2014), 1819–1837.
 - Gibaja E, Ventura S (2015) A tutorial on multilabel learning. ACM Comput Surv 47(3):52
 
 ## Problem Transformation
-### Binary Relevance
+### BinaryRelevance Based
+- Min-Ling Zhang,Ku-Kun,LiXu-Ying,LiuXin Geng.Binary relevance for multi-label learning: an overview,ront. Comput. Sci., 2018, 12(2): 191–202
+
 #### BR
-- Godbole, S., Sarawagi, S.:Discriminativemethodsformulti-labeled classification.Adv.Knowl.
-Discov. Data Mining 3056, 22–30 (2004)
+这一方法通过对每一个标签类别训练单独的分类器，因此它假定所有标签独立，忽视了标签之前的相关性。
 
 - M. R. Boutell, J. Luo, X. Shen, and C. M. Brown, “Learning multi-label scene classification,” Pattern Recognition, vol. 37,
 no. 9, pp. 1757–1771, 2004.
 
+#### 2BR
+这一方法主要是克服BR的没有考虑标签相关性的不足，首先和BR一样对每一个标签类别训练单独的分类器，第二个分类器通过处理第一个分类器的输出构造meta-model进行预测
 
+- Godbole, S., Sarawagi, S.:Discriminative methodsformulti-labeled classification.Adv.Knowl.
+Discov. Data Mining 3056, 22–30 (2004)
+传统的one-vs-other方法没有能挖掘相关性，先通过svm单独训练每一标签，再把训练集label(1或者-1)输出值加feature的列上组成new feature，通过归一化方法把old feature的数据归一化化成([0,1])
+
+- G. Tsoumakas, A. Dimou, E. Spyromitros, V. Mezaris, I. Kompatsiaris, and I. Vlahavas, “Correlation-based pruning
+of stacked binary relevance models for multi-label learning,” in Working Notes of the First International Workshop on
+Learning from Multi-Label Data, Bled, Slovenia, 2009, pp. 101–116.
 
 ## Tools
-
 ### MULAN
 - Tsoumakas, G., Xioufis, E.S., Vilcek, J., Vlahavas, I.: MULAN: A Java library for multi-label learning. J. Mach. Learn. Res. 12, 2411–2414 (2011)http://www.jmlr.org/papers/v12/tsoumakas11a.html
 
