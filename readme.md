@@ -73,8 +73,7 @@ NIPS ’09: neural information processing systems 2009.
 Computation, 2012.
 
 #### CPLST
-- Y.-N. Chen and H.-T. Lin, “Feature-aware label space dimension
-reduction for multi-label classification,” in NIPS, 2012, pp. 1529–1537
+- Y.-N. Chen and H.-T. Lin, “Feature-aware label space dimension reduction for multi-label classification,” in NIPS, 2012, pp. 1529–1537
 
 ## Tools
 ### scikit-multiflow(Python)
