@@ -1,3 +1,5 @@
+[TOC]
+
 # Multi-label papers
 
 ## Review
